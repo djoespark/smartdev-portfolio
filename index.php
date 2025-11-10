@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -25,7 +25,7 @@
         </div>
     </header>
 
-    <!-- Section About -->
+    
     <section id="about" class="fade-in">
         <div class="container fade-in">
             <h1>Bonjour, je suis DJAGLI Joseph Bénoît</h1>
@@ -54,43 +54,44 @@
         </div>
     </section>
 
-    <!-- Section Projects -->
-    <section id="projects" class="fade-in">
-        <div class="container fade-in">
-            <h2>Mes projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/projet1.png" alt="Mini-blog PHP/MySQL">
-                    <div class="project-info">
-                        <h3>Mini-blog PHP/MySQL</h3>
-                        <p>CRUD complet, Docker, responsive, gestion des utilisateurs.</p>
-                        <a href="#" class="btn">Voir le projet</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/logo.png" alt="Simulateur de devis">
-                    <div class="project-info">
-                        <h3>Simulateur de devis interactif</h3>
-                        <p>HTML/CSS, JS, calcul dynamique, design moderne.</p>
-                        <a href="#" class="btn">Voir le projet</a>
-                    </div>
+   <!-- Section Projects -->
+<section id="projects" class="fade-in">
+    <div class="container fade-in">
+        <h2>Mes projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/logo.png" alt="Simulateur de devis">
+                <div class="project-info">
+                    <h3>Simulateur de devis interactif</h3>
+                    <p>HTML/CSS, JS, calcul dynamique, design moderne.</p>
+                    <a href="projets/simulateur/index.html" target="_blank" class="btn">Voir le projet</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Modal Projet -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a href="https://github.com/djoespark/smartdev-studio" target="_blank" class="btn">Voir sur Github</a>
+    </div>
+</div>
+
 
     <!-- Section Contact -->
-    <section id="contact" class="fade-in">
-        <div class="container fade-in">
-            <h2>Contactez-moi</h2>
-            <form action="#" id="contactForm">
-                <input type="text" placeholder="Votre nom" required>
-                <input type="email" placeholder="Votre email" required>
-                <textarea placeholder="Votre message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
+   <section class="simulateur">
+  <h2>Simulez votre projet 🚀</h2>
+  <form id="simulateurForm">
+      <input type="text" id="nom" placeholder="Votre nom" required>
+      <textarea id="details" placeholder="Décrivez votre besoin..." required></textarea>
+      <button type="submit">Envoyer sur WhatsApp 💬</button>
+  </form>
+</section>
+ 
 
     <!-- Footer -->
     <footer>
@@ -98,7 +99,7 @@
             <p>&copy; 2025 SmartDev Studio - DJAGLI Joseph Bénoît</p>
             <p>
                 <a href="#">GitHub</a> | 
-                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
             </p>
         </div>
     </footer>
